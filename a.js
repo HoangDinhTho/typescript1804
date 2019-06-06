@@ -15,5 +15,14 @@ var Color;
     Color[Color["Blue"] = 10] = "Blue";
     Color[Color["Green"] = 11] = "Green";
 })(Color || (Color = {}));
-var r = Color.Blue;
-console.log(r);
+// let r: Color = Color.Blue // get value
+var n = Color[10]; // get name
+// console.log(n);
+function getName(name) {
+    return console.log(name);
+}
+// getName('name');
+var txt = 'some text';
+// let i = (<string>txt).charAt(1);
+var i = txt.charAt(1);
+console.log(i);
