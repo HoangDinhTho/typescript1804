@@ -35,6 +35,8 @@ interface Product{
     readonly _id: string;
     name: string;
     price?: number; // optional
+
+    getName(): void;
 }
 
 function printData(obj: Product): void{

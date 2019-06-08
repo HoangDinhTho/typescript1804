@@ -35,5 +35,4 @@ var Student = /** @class */ (function (_super) {
     return Student;
 }(Person));
 var s = new Student(22);
-// s.setName('Ti')
 console.log(s);

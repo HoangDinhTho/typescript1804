@@ -4,7 +4,7 @@ class Person{
         this.name = 'Teo';
         this.age = age;
     }
-    getTuoi(): number{
+    private getTuoi(): number{
         return this.age;
     }
 }
@@ -16,5 +16,5 @@ class Student extends Person{
     }
 }
 const s = new Student(22);
-// s.setName('Ti')
+
 console.log(s)
