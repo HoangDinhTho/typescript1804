@@ -28,4 +28,39 @@ function getName(name: string): void{
 let txt: any = 'some text';
 // let i = (<string>txt).charAt(1);
 let i: string = (txt as string).charAt(1);
-console.log(i)
+// console.log(i)
+
+
+interface Product{
+    readonly _id: string;
+    name: string;
+    price?: number; // optional
+}
+
+function printData(obj: Product): void{
+    obj.name = 'TXT';
+    console.log(obj.name)
+}
+
+// printData({ _id: '1223', name: 'Samsung' })
+
+class User{
+    public name: string;
+    // constructor(txtName: string){
+    //     this.name = txtName;
+    // }
+    constructor(private age: number){
+        this.name = 'Teo';
+        this.age = age;
+    }
+    getTuoi(): number{
+        return this.age;
+    }
+    get tuoi(): number{
+        return this.age;
+    }
+}
+const teo = new User(20);
+console.log(teo.getTuoi());
+console.log(teo.tuoi);
+console.log(teo);
